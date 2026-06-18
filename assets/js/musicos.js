@@ -3,12 +3,27 @@ const ORDER = ['Regência','Spalla','Flauta','Oboé','Clarinete','Saxofone','Tro
 const roster = document.querySelector('[data-musician-roster]');
 const profileRoot = document.querySelector('[data-profile-root]');
 
+const PROFILE_OVERRIDES = {
+  'victor-vinicius-garcia-pereira': {
+    foto: 'assets/img/musicos/victor-vinicius-garcia-pereira.svg',
+    foto_disponivel: true
+  }
+};
+
+function normalizeMusicians(items) {
+  return items.map(item => ({ ...item, ...(PROFILE_OVERRIDES[item.id] || {}) }));
+}
+
 function initials(name) {
   return name.split(' ').filter(Boolean).slice(0, 2).map(part => part[0]).join('').toUpperCase();
 }
 
 function groupByNaipe(items) {
   return ORDER.map(naipe => ({ naipe, items: items.filter(item => item.naipe === naipe) })).filter(group => group.items.length);
+}
+
+function slugNaipe(naipe) {
+  return naipe.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/ç/g, 'c');
 }
 
 function musicianCard(item) {
@@ -24,7 +39,7 @@ function musicianCard(item) {
 function renderRoster(items) {
   const groups = groupByNaipe(items);
   roster.innerHTML = groups.map(group => `
-    <section class="roster-section" id="${group.naipe.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/ç/g, 'c')}">
+    <section class="roster-section" id="${slugNaipe(group.naipe)}">
       <div class="roster-title"><h2>${group.naipe}</h2><span class="count">${group.items.length}</span></div>
       <div class="musician-grid">${group.items.map(musicianCard).join('')}</div>
     </section>
@@ -64,7 +79,7 @@ function openProfile(item) {
           <div class="profile-maintenance">
             <strong>Manutenção</strong><br>
             Foto esperada: <code>${item.foto}</code><br>
-            Proporção recomendada: <code>4:5</code> · Tamanho base: <code>1080x1350px</code> · Formato: <code>WEBP</code>
+            Proporção recomendada: <code>4:5</code> · Tamanho base: <code>1080x1350px</code> · Formato: <code>WEBP/SVG</code>
           </div>
         </div>
       </div>
@@ -80,7 +95,7 @@ function closeProfile() {
 
 async function init() {
   const response = await fetch('assets/data/musicos.json');
-  const musicians = await response.json();
+  const musicians = normalizeMusicians(await response.json());
   renderRoster(musicians);
 
   roster.addEventListener('click', event => {
