@@ -1,25 +1,106 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>BSU — Banda Sinfônica da Unicamp | Preview conceitual</title>
-  <meta name="description" content="Preview conceitual para uma nova landing page institucional da Banda Sinfônica da Unicamp." />
-  <meta name="theme-color" content="#081827" />
-  <style>
-    :root{--bg:#081827;--bg2:#102b46;--paper:#fffaf0;--gold:#d7a84b;--gold2:#f2d18a;--ink:#13202c;--soft:#f6efe2;--muted:#637386;--stroke:rgba(255,255,255,.18);--radius:24px;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:#fff;line-height:1.6}a{color:inherit;text-decoration:none}.container{width:min(1120px,92vw);margin:auto}.topbar{position:sticky;top:0;z-index:10;background:rgba(8,24,39,.82);backdrop-filter:blur(16px);border-bottom:1px solid var(--stroke)}.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px;font-weight:900;line-height:1.1}.mark{width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,var(--gold),#8e6422);display:grid;place-items:center;box-shadow:0 10px 30px rgba(215,168,75,.25)}.brand small{font-weight:600;color:#dbe5ee}.links{display:flex;gap:20px;font-size:.94rem;color:#e8edf3}.links a:hover{color:var(--gold2)}.btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,.22);padding:12px 18px;border-radius:999px;font-weight:800;background:rgba(255,255,255,.06);transition:.2s}.btn.primary{background:linear-gradient(135deg,var(--gold),#b77b25);color:#101923;border:0}.btn:hover{transform:translateY(-1px)}.hero{overflow:hidden;padding:88px 0 68px;background:radial-gradient(circle at 72% 10%,rgba(215,168,75,.27),transparent 32%),linear-gradient(135deg,#081827 0%,#102b46 58%,#081827 100%)}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}.eyebrow{text-transform:uppercase;letter-spacing:.22em;color:var(--gold2);font-weight:900;font-size:.78rem}.hero h1{font-family:Georgia,serif;font-size:clamp(3.1rem,7vw,6.5rem);line-height:.92;margin:16px 0 22px}.hero p{font-size:1.17rem;color:#e8edf3;max-width:650px}.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}.visual{min-height:520px;border-radius:34px;background:linear-gradient(160deg,rgba(255,255,255,.13),rgba(255,255,255,.04));border:1px solid var(--stroke);box-shadow:0 24px 70px rgba(0,0,0,.28);position:relative;overflow:hidden}.visual:before{content:"";position:absolute;inset:26px;border-radius:28px;background:linear-gradient(160deg,rgba(8,24,39,.12),rgba(8,24,39,.82)),radial-gradient(circle at 25% 38%,rgba(215,168,75,.36) 0 12%,transparent 13%),radial-gradient(circle at 60% 32%,rgba(215,168,75,.27) 0 16%,transparent 17%),linear-gradient(135deg,#1b3149,#0b1c2f)}.visual:after{content:"Foto institucional / concerto / regência";position:absolute;left:48px;right:48px;bottom:48px;padding:26px;border-radius:24px;background:rgba(8,24,39,.74);border:1px solid rgba(255,255,255,.2);color:#f4ead2;font-weight:800}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px}.stat{padding:18px;border-radius:18px;background:rgba(255,255,255,.08);border:1px solid var(--stroke)}.stat b{display:block;font-size:1.85rem;color:var(--gold2)}.section{padding:78px 0}.light{background:var(--paper);color:var(--ink)}.section-title{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:34px}.section-title h2{font-family:Georgia,serif;font-size:clamp(2.1rem,4vw,3.7rem);line-height:1;margin:0}.section-title p{max-width:570px;margin:0;color:#506171}.light .eyebrow{color:#96660f}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{border-radius:var(--radius);padding:26px;background:#fff;box-shadow:0 12px 40px rgba(19,32,44,.08);border:1px solid rgba(19,32,44,.08)}.card.dark{background:rgba(255,255,255,.08);color:#fff;border-color:var(--stroke);box-shadow:none}.date{display:inline-flex;border-radius:14px;overflow:hidden;border:1px solid rgba(19,32,44,.1);margin-bottom:18px}.date b,.date span{display:block;padding:9px 12px}.date b{background:var(--ink);color:#fff}.date span{background:var(--soft);color:var(--ink);font-weight:900}.tag{display:inline-block;padding:6px 10px;border-radius:999px;background:#efe2c4;color:#745017;font-weight:900;font-size:.78rem}.card h3{font-size:1.35rem;margin:14px 0 8px}.muted{color:var(--muted)}.grid2{display:grid;grid-template-columns:.9fr 1.1fr;gap:38px;align-items:center}.portrait{min-height:430px;border-radius:32px;background:linear-gradient(135deg,#2a4663,#0d2237);position:relative;overflow:hidden;box-shadow:0 24px 70px rgba(0,0,0,.28)}.portrait:after{content:"Área para foto oficial da banda, maestro ou concerto";position:absolute;left:24px;right:24px;bottom:24px;padding:18px;border-radius:18px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);color:#f4ead2}.pill-grid{display:flex;flex-wrap:wrap;gap:10px}.pill{padding:10px 14px;border-radius:999px;background:rgba(215,168,75,.14);border:1px solid rgba(215,168,75,.35);color:#f7dfab;font-weight:800}.light .pill{color:#72500f;background:#f3e4c4}.cta{padding:58px;border-radius:36px;background:linear-gradient(135deg,#102b46,#071522);border:1px solid var(--stroke);box-shadow:0 24px 70px rgba(0,0,0,.28);display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center}.cta h2{font-family:Georgia,serif;font-size:2.6rem;line-height:1;margin:0 0 12px}.footer{padding:44px 0;color:#cbd6df;border-top:1px solid var(--stroke)}@media(max-width:900px){.links{display:none}.hero-grid,.grid2,.cta{grid-template-columns:1fr}.visual{min-height:390px}.cards{grid-template-columns:1fr}.stats{grid-template-columns:1fr}.section-title{display:block}.cta{padding:34px}.hero{padding-top:58px}}
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Preview institucional da Banda Sinfônica da Unicamp com páginas internas, agenda, músicos, imprensa e contato.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https:; style-src 'self'; base-uri 'self'; form-action 'self'; object-src 'none'; frame-ancestors 'none'">
+  <title>BSU — Banda Sinfônica da Unicamp</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header class="topbar"><div class="container nav"><a class="brand" href="#top"><span class="mark">♬</span><span>BSU<br><small>Banda Sinfônica da Unicamp</small></span></a><nav class="links" aria-label="Navegação principal"><a href="#agenda">Agenda</a><a href="#sobre">Sobre</a><a href="#musicos">Músicos</a><a href="#imprensa">Imprensa</a><a href="#contato">Contato</a></nav><a class="btn primary" href="#agenda">Ver temporada</a></div></header>
-  <main id="top">
-    <section class="hero"><div class="container hero-grid"><div><div class="eyebrow">Temporada 2026 · Campinas/SP</div><h1>Música sinfônica com presença, memória e futuro.</h1><p>Preview conceitual para reposicionar o site da Banda Sinfônica da Unicamp como um portal institucional moderno, acessível e preparado para imprensa, público, músicos e apoiadores.</p><div class="actions"><a class="btn primary" href="#agenda">Explorar agenda</a><a class="btn" href="#contato">Contato e booking</a></div><div class="stats"><div class="stat"><b>40+</b><span>músicos e convidados</span></div><div class="stat"><b>2026</b><span>temporada em destaque</span></div><div class="stat"><b>EPK</b><span>imprensa e patrocínio</span></div></div></div><div class="visual" role="img" aria-label="Placeholder de imagem institucional da banda"></div></div></section>
-    <section class="section light" id="agenda"><div class="container"><div class="section-title"><div><div class="eyebrow">Agenda</div><h2>Próximos concertos</h2></div><p>Cards pensados para substituir chamadas genéricas e destacar data, local, programa e ação principal.</p></div><div class="cards"><article class="card"><div class="date"><b>27</b><span>ABR</span></div><span class="tag">Concerto</span><h3>Abertura da temporada</h3><p class="muted">Evento exemplo com chamada clara para programa, local e reserva de agenda.</p></article><article class="card"><div class="date"><b>14</b><span>JUN</span></div><span class="tag">Especial</span><h3>Repertório brasileiro</h3><p class="muted">Card preparado para receber release, compositor, regência e informações de acesso.</p></article><article class="card"><div class="date"><b>31</b><span>AGO</span></div><span class="tag">Universidade</span><h3>Concerto institucional</h3><p class="muted">Modelo de divulgação com foco em clareza, acessibilidade e compartilhamento.</p></article></div></div></section>
-    <section class="section" id="sobre"><div class="container grid2"><div class="portrait"></div><div><div class="eyebrow">Sobre a BSU</div><h2 style="font-family:Georgia,serif;font-size:3rem;line-height:1.05;margin:14px 0 18px">Uma presença artística conectada à universidade e à cidade.</h2><p>A proposta visual valoriza a trajetória da banda, o vínculo com a Unicamp e a experiência presencial dos concertos. O site passa a comunicar autoridade institucional, agenda ativa e abertura para imprensa, público e apoiadores.</p><div class="pill-grid"><span class="pill">História</span><span class="pill">Regência</span><span class="pill">Corpo artístico</span><span class="pill">Extensão cultural</span><span class="pill">Acessibilidade</span></div></div></div></section>
-    <section class="section light" id="musicos"><div class="container"><div class="section-title"><div><div class="eyebrow">Músicos</div><h2>Corpo artístico por naipe</h2></div><p>Em vez de uma lista longa, a proposta usa filtros e cards por instrumentos, facilitando navegação e revisão editorial.</p></div><div class="cards"><article class="card"><h3>Madeiras</h3><p class="muted">Flauta, oboé, clarinete, fagote e saxofones.</p></article><article class="card"><h3>Metais</h3><p class="muted">Trompete, trompa, trombone, bombardino e tuba.</p></article><article class="card"><h3>Percussão e apoio</h3><p class="muted">Percussão sinfônica, piano, convidados e equipe.</p></article></div></div></section>
-    <section class="section" id="imprensa"><div class="container"><div class="section-title"><div><div class="eyebrow">Imprensa e patrocínio</div><h2>EPK pronto para relacionamento</h2></div><p>Uma área profissional com release curto, fotos oficiais, logo, rider técnico, clipping e proposta de apoio cultural.</p></div><div class="cards"><article class="card dark"><h3>Release institucional</h3><p>Texto curto e completo para imprensa, produtores e parceiros.</p></article><article class="card dark"><h3>Kit de mídia</h3><p>Fotos oficiais, marcas, biografia do regente e materiais de divulgação.</p></article><article class="card dark"><h3>Apoio cultural</h3><p>Pacotes de patrocínio, contrapartidas e impacto institucional.</p></article></div></div></section>
-    <section class="section light" id="contato"><div class="container"><div class="cta"><div><div class="eyebrow">Próximo passo</div><h2>Publicar preview e validar com a equipe.</h2><p>Após aprovação visual, separar páginas internas, substituir placeholders por fotos reais e revisar todo o conteúdo institucional.</p></div><a class="btn primary" href="mailto:contato@unicamp.br">Falar com a equipe</a></div></div></section>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html"><strong>BSU</strong><span>Banda Sinfônica da Unicamp</span></a>
+      <nav class="menu" aria-label="Navegação principal">
+        <a class="active" href="index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="musicos.html">Músicos</a>
+        <a href="agenda.html">Agenda</a>
+        <a href="galeria.html">Galeria</a>
+        <a href="noticias.html">Notícias</a>
+        <a href="imprensa.html">Imprensa</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero split">
+      <div class="container">
+        <div>
+          <div class="eyebrow">Temporada 2026 · Campinas/SP</div>
+          <h1>Banda Sinfônica da Unicamp</h1>
+          <p>Música orquestral, formação artística e difusão cultural — do campus da Unicamp para os palcos do Brasil.</p>
+          <div class="actions">
+            <a class="btn primary" href="agenda.html">Ver agenda</a>
+            <a class="btn" href="sobre.html">Sobre a BSU</a>
+          </div>
+        </div>
+        <div class="hero-art" role="img" aria-label="Espaço reservado para foto institucional da banda"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-title">
+          <div>
+            <div class="eyebrow">Portal institucional</div>
+            <h2>Estrutura em páginas</h2>
+          </div>
+          <p>O preview agora segue a navegação do site original: cada item principal tem página própria, conteúdo dedicado e caminho claro para o visitante.</p>
+        </div>
+        <div class="grid-3">
+          <a class="card" href="sobre.html"><span class="tag">Institucional</span><h3>Sobre a BSU</h3><p>História, missão, regência e corpo artístico.</p></a>
+          <a class="card" href="musicos.html"><span class="tag">Corpo artístico</span><h3>Músicos por naipe</h3><p>Todos os integrantes organizados por categoria e instrumento.</p></a>
+          <a class="card" href="imprensa.html"><span class="tag">Profissional</span><h3>Kit de imprensa</h3><p>Release, fotos, rider técnico e solicitações de entrevista.</p></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section navy">
+      <div class="container">
+        <div class="section-title">
+          <div>
+            <div class="eyebrow">Agenda</div>
+            <h2>Concertos e atividades</h2>
+          </div>
+          <p>Área preparada para temporada, ensaios abertos, concertos institucionais e apresentações externas.</p>
+        </div>
+        <div class="grid-3">
+          <article class="card"><h3>Próximos concertos</h3><p>Espaço para destacar data, local, regência, programa e chamada para reserva de agenda.</p></article>
+          <article class="card"><h3>Notícias</h3><p>Comunicados, bastidores, temporada, convidados e projetos educativos.</p></article>
+          <article class="card"><h3>Galeria</h3><p>Registros de concertos, ensaios e bastidores organizados por álbuns.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-2">
+        <div class="card">
+          <span class="tag">Contato</span>
+          <h3>Convites, imprensa e parcerias</h3>
+          <p>Área de contato com canais institucionais, imprensa, booking e patrocínio.</p>
+          <div class="actions"><a class="btn dark" href="contato.html">Fale conosco</a></div>
+        </div>
+        <div class="card">
+          <span class="tag">Apoio cultural</span>
+          <h3>Patrocínio e relacionamento</h3>
+          <p>Nova página para cotas de apoio, contrapartidas e posicionamento institucional da marca apoiadora.</p>
+          <div class="actions"><a class="btn dark" href="patrocinio.html">Ver proposta</a></div>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer class="footer"><div class="container"><strong>BSU — Banda Sinfônica da Unicamp</strong><br><span>Preview conceitual para GitHub Pages · HTML/CSS estático · 2026</span></div></footer>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><h4>BSU</h4><p>Banda Sinfônica da Unicamp. Música orquestral, formação artística e difusão cultural.</p><small>© 2026 Banda Sinfônica da Unicamp.</small></div>
+      <div><h4>Navegação</h4><a href="sobre.html">Sobre</a><a href="musicos.html">Músicos</a><a href="agenda.html">Agenda</a><a href="galeria.html">Galeria</a></div>
+      <div><h4>Profissionais</h4><a href="imprensa.html">Kit de Imprensa</a><a href="patrocinio.html">Patrocínio</a><a href="booking.html">Booking</a><a href="contato.html">Contato</a></div>
+      <div><h4>Local</h4><p>Campinas, SP — Unicamp</p></div>
+    </div>
+  </footer>
 </body>
 </html>
