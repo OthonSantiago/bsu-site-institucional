@@ -8,7 +8,7 @@
   if (sessionStorage.getItem('bsu-page-turn') === '1') {
     sessionStorage.removeItem('bsu-page-turn');
     document.body.classList.add('has-entered');
-    window.setTimeout(() => document.body.classList.remove('has-entered'), 520);
+    window.setTimeout(() => document.body.classList.remove('has-entered'), 360);
   }
 
   if (reduceMotion) return;
@@ -35,6 +35,6 @@
 
     window.setTimeout(() => {
       window.location.href = anchor.href;
-    }, 420);
+    }, 260);
   });
 })();
